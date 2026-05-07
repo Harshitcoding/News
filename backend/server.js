@@ -22,6 +22,7 @@ app.use(express.json());
 app.use('/api', scraperRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/stories', storyRoutes);
+app.use('/api', storyRoutes);
 
 connectDB();
 scrapeHackerNews();
