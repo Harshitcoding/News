@@ -32,7 +32,7 @@ const Navbar = () => {
             </Link>
             <button
               onClick={handleLogout}
-              className="bg-white text-orange-500 text-sm font-semibold px-4 py-1.5 rounded-lg hover:bg-orange-100 transition"
+              className="bg-white text-orange-500 text-sm font-semibold px-4 py-1.5 rounded-lg hover:bg-orange-100 transition cursor-pointer"
             >
               Logout
             </button>
