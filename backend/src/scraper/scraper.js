@@ -2,6 +2,7 @@ import axios from 'axios';
 import * as cheerio from 'cheerio';
 import Story from '../models/story.model.js';
 
+
 const scrapeHackerNews = async () => {
   try {
     console.log('Scraping HackerNews...');
