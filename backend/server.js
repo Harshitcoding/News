@@ -7,6 +7,7 @@ import cors from 'cors';
 
 import connectDB from './src/config/db.js';
 import scrapeHackerNews from './src/scraper/scraper.js';
+import storyRoutes from './src/routes/story.routes.js';
 
 import scraperRoutes from './src/routes/scraper.routes.js';
 import authRoutes from './src/routes/auth.routes.js';
@@ -20,6 +21,7 @@ app.use(express.json());
 
 app.use('/api', scraperRoutes);
 app.use('/api/auth', authRoutes);
+app.use('/api/stories', storyRoutes);
 
 connectDB();
 scrapeHackerNews();
